@@ -143,9 +143,10 @@ a {
   border: transparent;
   margin-right: 14px;
 }
+
 #download-app-button {
   background-color: black;
-  border: 1px solid transparent;
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .hero-img-container button {
@@ -245,5 +246,159 @@ a {
   }
   .join-download-div {
     justify-content: space-between;
+  }
+}
+
+/* hero section ends  */
+
+.section-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: rgb(15, 10, 10);
+}
+
+.habit-section {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.habit-section h1 {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.habit-section p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card div {
+  text-align: center;
+}
+.cards .card div img {
+  border-radius: 50%;
+}
+
+.cards .card h4 {
+  margin: 6px 0px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: center;
+}
+
+.cards .card p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .habit-section {
+    padding-top: 5px;
+  }
+  .habit-section h1 {
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
+  .habit-section p {
+    font-size: 16px;
+  }
+  .cards {
+    flex-direction: column;
+  }
+}
+
+.run-easily-container {
+  width: 70%;
+  margin: 0 auto;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  padding: 40px 54px;
+  display: flex;
+  gap: 20%;
+  justify-content: space-between;
+}
+
+.run-easily-content {
+  width: 40%;
+}
+
+.run-easily-container h1 {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  margin: 14px 0px;
+}
+
+.run-easily-container p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin: 14px 0px;
+}
+
+.run-easily-container button {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  padding: 16px 40px;
+}
+
+.r-e-c-image {
+  width: 40%;
+}
+
+.r-e-c-image img {
+  width: 100%;
+  height: 375px;
+  object-fit: none;
+  object-position: 67% 33%;
+  border-radius: 18px;
+}
+
+@media screen and (max-width: 576px) {
+  .run-easily-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .run-easily-content,
+  .run-easily-container button,
+  .r-e-c-image {
+    width: 100%;
+  }
+  .run-easily-container button {
+    margin-top: 24px;
+  }
+  .r-e-c-image img {
+    height: 170px;
+    object-fit: cover;
   }
 }
