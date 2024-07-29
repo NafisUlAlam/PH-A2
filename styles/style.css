@@ -247,6 +247,15 @@ a {
   .join-download-div {
     justify-content: space-between;
   }
+  .hero-img-container {
+    display: block;
+    width: 100%;
+    margin-bottom: -5px;
+  }
+  .hero-img-container img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 /* hero section ends  */
@@ -433,7 +442,7 @@ a {
 }
 
 .chart-calculation-container {
-  margin: 88px 0px;
+  margin: 88px 0px 0px 0px;
   background: rgb(34, 34, 34);
   display: flex;
   justify-content: space-around;
@@ -531,7 +540,7 @@ a {
   }
   .chart-calculation-container {
     flex-direction: column;
-    margin: 24px 0;
+    margin: 24px 0 0 0;
     padding: 16px;
   }
   .bmi-chart h3 {
@@ -552,3 +561,85 @@ a {
 }
 
 /* bmi chart ends here  */
+/* meet team section starts  */
+.meet-article h3 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.meet-article p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  margin: 14px 0;
+  text-align: center;
+}
+
+.trainers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  border-radius: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.trainer-card {
+  position: relative;
+}
+
+.trainer-card .image-container {
+  height: 400px;
+}
+
+.trainer-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+.trainer-card .trainer-details {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  color: white;
+}
+
+.trainer-details p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#img-4 {
+  object-position: 65% 10%;
+}
+
+#img-6 {
+  object-position: 30% 0%;
+}
+
+@media screen and (max-width: 576px) {
+  .meet-article {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .meet-article h3 {
+    font-size: 32px;
+  }
+  .meet-article p {
+    font-size: 14px;
+  }
+  .trainers {
+    grid-template-columns: 1fr;
+  }
+}
