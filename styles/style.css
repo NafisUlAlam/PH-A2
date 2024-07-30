@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
   /* background-color: black; */
 }
 
@@ -641,5 +642,92 @@ a {
   }
   .trainers {
     grid-template-columns: 1fr;
+  }
+}
+
+/* meet team section ends  */
+
+/* footer starts  */
+.footer {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  padding-top: 66px;
+}
+
+.footer-container {
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.footer-container > * {
+  flex: 1 1 0;
+}
+
+.first-footer {
+  flex: 2 1 0;
+}
+
+.first-footer h3 {
+  color: rgb(230, 83, 60);
+  font-family: Inter;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 120%;
+  margin: 20px 0px;
+  font-style: italic;
+}
+
+.first-footer p,
+.footer li {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.second-footer h3,
+.third-footer h3 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 20px 0px;
+}
+
+.footer li {
+  list-style-type: none;
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+hr {
+  width: 70%;
+  margin: 79px auto 36px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.end-credit {
+  text-align: center;
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+@media screen and (max-width: 576px) {
+  .footer-container {
+    display: block;
+  }
+  hr {
+    width: 100%;
   }
 }
