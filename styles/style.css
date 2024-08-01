@@ -55,18 +55,16 @@ a {
   color: white;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 #fitness {
   color: rgb(230, 83, 60);
   font-size: 36px;
   font-weight: 800;
   font-style: italic;
   line-height: 120%;
-}
-
-#home {
-  border-radius: 46px;
-  background: rgb(230, 83, 60);
-  font-weight: 600;
 }
 
 #shape {
@@ -88,12 +86,20 @@ a {
   border-radius: 39px;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .right-nav li {
   padding: 8px 20px;
   color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+}
+
+#home,
+.right-nav li:hover {
+  border-radius: 46px;
+  background: rgb(230, 83, 60);
+  font-weight: 600;
 }
 
 .hero-content-container {
@@ -234,8 +240,14 @@ a {
   .hero-content-container {
     display: block;
   }
+  .hero-content-container h2 {
+    font-size: 45px;
+  }
   .hero-content-container button {
     padding: 16px;
+  }
+  #five-hundred {
+    font-size: 32px;
   }
   #image-button-1 {
     top: 5%;
@@ -401,6 +413,12 @@ a {
   .run-easily-container {
     flex-direction: column;
     gap: 24px;
+    padding: 16px;
+    width: 75%;
+  }
+
+  .run-easily-container h1 {
+    margin: 0 0 14px 0;
   }
   .run-easily-content,
   .run-easily-container button,
@@ -515,6 +533,13 @@ a {
   line-height: 22px;
   flex: 1 1 0;
   margin: 5px 0;
+}
+
+select option {
+  background-color: #393939;
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  border-radius: 8px;
 }
 
 .height-weight-input,
@@ -634,14 +659,21 @@ a {
     width: 70%;
     margin: 0 auto;
   }
+
   .meet-article h3 {
     font-size: 32px;
   }
+
   .meet-article p {
     font-size: 14px;
   }
+
   .trainers {
     grid-template-columns: 1fr;
+  }
+
+  .trainer-card .image-container {
+    height: 300px;
   }
 }
 
@@ -727,8 +759,23 @@ hr {
   .footer-container {
     display: block;
   }
+
   hr {
     width: 100%;
+  }
+
+  .first-footer h3 {
+    font-size: 48px;
+  }
+
+  .second-footer h3,
+  .third-footer h3 {
+    font-size: 24px;
+  }
+
+  .second-footer li,
+  .third-footer li {
+    font-size: 16px;
   }
 }
 /* footer ends  */
@@ -755,6 +802,7 @@ hr {
   line-height: 120%;
   padding-top: 40px;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .video-article p {
@@ -766,6 +814,7 @@ hr {
   letter-spacing: 0.3px;
   margin: 14px 0;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 iframe {
@@ -781,12 +830,37 @@ iframe {
   justify-self: start;
 }
 
+.youtube-button {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.youtube-button button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  background-color: rgb(230, 83, 60);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 576px) {
   .videos {
     grid-template-columns: 1fr;
   }
+
   .right-video,
   .left-video {
     justify-self: center;
+  }
+
+  .video-article h3 {
+    font-size: 32px;
+  }
+
+  .youtube-button button {
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 500;
   }
 }
