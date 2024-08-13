@@ -104,7 +104,7 @@ button:hover {
 
 .hero-content-container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 50px;
 }
 
@@ -268,6 +268,16 @@ button:hover {
   .hero-img-container img {
     width: 100%;
     object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  #five-hundred {
+    font-size: 24px;
+  }
+  #image-button-1 {
+    top: 70%;
+    right: -20px;
   }
 }
 
@@ -611,13 +621,38 @@ select option {
 
 .trainers {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "one two three"
+    "four five six";
   gap: 20px;
   border-radius: 18px;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   width: 70%;
   margin: 0 auto;
+}
+
+#trainer-1 {
+  grid-area: one;
+}
+
+#trainer-2 {
+  grid-area: two;
+}
+#trainer-3 {
+  grid-area: three;
+}
+
+#trainer-4 {
+  grid-area: four;
+}
+
+#trainer-5 {
+  grid-area: five;
+}
+
+#trainer-6 {
+  grid-area: six;
 }
 
 .trainer-card {
@@ -669,9 +704,16 @@ select option {
   }
 
   .trainers {
-    grid-template-columns: 1fr;
+    grid-template-areas:
+      "two"
+      "five"
+      "three"
+      "six";
   }
-
+  #trainer-1,
+  #trainer-4 {
+    display: none;
+  }
   .trainer-card .image-container {
     height: 300px;
   }
@@ -775,6 +817,10 @@ hr {
 
   .second-footer li,
   .third-footer li {
+    font-size: 16px;
+  }
+
+  .end-credit {
     font-size: 16px;
   }
 }
